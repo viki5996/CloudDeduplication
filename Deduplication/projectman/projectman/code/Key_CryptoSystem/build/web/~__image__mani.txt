@@ -1,0 +1,119 @@
+Testbed:
+A testbed is a platform for experimentation of large development projects, testbed is also known as the test environment.
+White Box Testing:
+White Box Testing (WBT) is also known as Code-Based Testing or Structural Testing. White box testing is the software testing method in which internal structure is being known to tester who is going to test the software.
+Here are some white box testing techniques:
+Statement Coverage:
+In this white box testing technique try to cover 100% statement coverage of the code, it means while testing the every possible statement in the code is executed at least once.
+Tools: To test the Statement Coverage the Cantata++ can be used as white box testing tool.
+Decision Coverage:
+In this white box testing technique try to cover 100% decision coverage of the code, it means while testing the every
+possible decision conditions like if-else, for loop and other conditional loops in the code is executed at least once.
+Tools: To cover the Decision Coverage testing in the code the TCAT-PATH is used. This supports for the C, C++ and Java applications.
+Condition Coverage:
+In this white box testing technique try to cover 100% Condition coverage of the code, it means while testing the every possible conditions in the code is executed at least once.
+Decision/Condition Coverage:
+In this mixed type of white box testing technique try to cover 100% Decision/Condition coverage of the code, it means while testing the every possible Decisions/Conditions in the code is executed at least once.
+Multiple Condition Coverage:
+In this type of testing we use to cover each entry point of the system to be execute once.
+In the actual development process developers are make use of the combination of techniques those are suitable for their software application.
+Using above mentions testing white box testing techniques the 80% to 90% code coverage is completed which might be sufficient with white box testing.
+
+Software testing:
+Software testing is process used to measure the information related to quality of the product or service under test. In this process we are doing measurement of quality & typically try to find the completeness, correctness, security of product or service under test.
+Manual Testing 
+Manual Testing is a process carried out to find the defects. In this method the tester plays an important role as end user and verify all features of the application to ensure that the behavior of the application. The Manual Testing is very basic type of testing which helps to find the bugs in the application under test.
+The Test Plan is created & followed by the tester to ensure that the comprehensiveness of testing while executing the test cases manually without using automation testing tool.
+Goal of Manual Testing:
+The main Goal of Manual Testing is to make sure that the application under test is defect free and software application is working as per the requirement specification document.
+This type includes the testing of the Software manually i.e. without using any automated tool or any script. In this type, tester takes over the role of end user and test the Software to identify any un-expected behavior or bug. There are different stages for Manual Testing like Unit testing, Integration testing, System testing and User Acceptance testing.
+A test plan document is created by test lead which describes the detailed and systematic approach to testing a software application. Basically the test plan typically includes a complete understanding of what the ultimate workflow will be. To ensure the completeness of testing (100% test coverage) test cases or test scenarios are created. Manual Testing Concepts also includes exploratory testing as testers explore the software to identify errors in it
+After the testing is started the designed test cases or test scenarios will be executed & any differences between actual & expected results are reported as defects. Once the reported defects are fixed, the testers will retest the defect to make sure that the defects are fixed. The main goal of Software testing is to make software defect free & deliver good quality Product to customer.
+          
+                        
+
+Difference between Manual Testing and Automation Testing:
+Manual testing will be used when the test case only needs to runs once or twice.	Automation testing will be used when need to execute the set of test cases tests repeatedly.
+Manual testing will be very useful while executing test cases first time & may or may not be powerful to catch the regression defects under frequently changing requirements.	Automation testing will be very useful to catch regressions in a timely manner when the code is frequently changes.
+Manual testing is less reliable while executing test cases every time. Using manual software testing it may not be perform test cases execution with same precision.	Automation tests will help to perform same operation precisely each time.
+Simultaneously testing on different machine with different OS platform combination is not possible using manual testing. To execute such task separate testers are required.	Automation testing will be carried out simultaneously on different machine with different OS platform combination.
+To execute the test cases every time tester required same amount of time.	Once Automation test suites are ready then less testers are required to execute the test cases.
+No programming can be done to write sophisticated tests which fetch hidden information.	Using Automation testing, Testers can program complicated tests to bring out of sight information.
+Manual testing is slower than automation. Running tests manually can be very time consuming. 	Automation runs test cases significantly faster than human resources.
+Manual testing requires less cost than automating it.	Initial cost to automate is more than manual testing but can be used repetitively.
+It is preferable to execute UI test cases using manual testing.	Sometimes can’t automate the UI test cases using automation testing.
+To execute the Build Verification Testing (BVT) is very mundane and tiresome in Manual testing.	Automation testing is very useful for automating the Build Verification Testing (BVT) & it is not mundane and tiresome.
+ 
+Black Box Testing:
+	Black box testing is the Software testing method which is used to test the software without knowing the internal structure of code or program. All testing is done as customer’s point of view and tester is only aware of what is software is supposed to do but how these requests are processing by software is not aware.
+While testing tester is knows about the input and expected output of the software and they do not aware of how the software or application actually processing the input requests & giving the outputs. Tester only passes valid as well as invalid inputs & determines the correct expected outputs. All the test cases to test using such method are calculated based on requirements & specifications document.
+Types of Black Box Testing Techniques: Following black box testing techniques are used for testing the software application.
+•	Boundary Value Analysis (BVA)
+•	Equivalence Class Partitioning
+•	Decision Table based testing
+•	Cause-Effect Graphing Technique
+•	Error Guessing
+Boundary Value Analysis (BVA):
+Most of errors occur at boundary of the input values. This is one of the techniques used to find the error in the boundaries of input values rather than the center of the input value range.
+Boundary Value Analysis is the next step of the Equivalence class in which all test cases are design at the boundary of the Equivalence class.
+Let us take an example to explain this:
+Suppose we have software application which accepts the input value text box ranging from 1 to 1000, in this case we have invalid and valid inputs:
+Invalid Input	Valid Input	Invalid Input
+0 – less	1 – 1000	1001 – above
+Equivalence Class Partitioning:
+The equivalence class partition is the black box test case design technique used for writing test cases. This approach is use to reduce huge set of possible inputs to small but equally effective inputs. This is done by dividing inputs into the classes and gets one value from each class. Such method is used when exhaustive testing is most wanted & to avoid the redundancy of inputs.
+In the equivalence partitioning input are divided based on the input values:
+•	If input value is Range, then we one valid equivalence class & two invalid equivalence classes.
+•	If input value is specific set, then we one valid equivalence class & one invalid equivalence classes.
+•	If input value is number, then we one valid equivalence class & two invalid equivalence classes.
+•	If input value is Boolean, then we one valid equivalence class & one invalid equivalence classes.
+Smoke Testing:
+Smoke testing is the initial testing process exercised to check whether the software under test is ready/stable for further testing. this types of testing mainly focus on the important functionality of application, tester do not care about detailed testing of each software component, this can be cover in the further testing of application.
+Sanity Testing:
+The main aim of Sanity testing to check the planned functionality is working as expected. Instead of doing whole regression testing the Sanity testing is perform.
+Gray Box Testing:
+Gray box testing is the testing of software application using effective combination of both White box testing & Black box testing method. This is nice & powerful idea to test the application. Gray Box Testing approach is the testing approach used when some knowledge of internal structure but not in detailed.
+Functional Testing:
+	Function Testing is the type of testing done against the business requirements of application. It is a black box type of testing.
+	It involves the complete integration system to evaluate the system’s compliance with its specified requirements. Based on the functional specification document this type of testing is to be carried out. In actual testing, testers need to verify a specific action or function of the code. For functional testing either manual testing or automation tools can be used but functionality testing would be easier using manual testing only. Prior to Non Functional testing the Functional testing would be executed first.
+Non Functional Testing:
+
+	The Non Functional Testing is the type of testing done against the Non-functional requirements. Most of the criteria are not consider in functional testing so it is used to check the readiness of a system. Non-functional requirements tend to be those that reflect the quality of the product, particularly in the context of the suitability perspective of its users. It can be started after the completion of Functional Testing. The Non-functional tests can be effective by using testing tools.
+
+	The testing of software attributes which are not related to any specific function or user action like performance, scalability, security or behavior of application under certain constraints.
+Non-functional testing has a great influence on customer and user satisfaction with the product. Non-functional testing should be expressed in a testable way, not like “the system should be fast” or “the system should be easy to operate” which is not testable.
+Basically in the non-functional test is used to major non-functional attributes of software systems. Let’s take Non-functional requirements examples; in how much time does the software will take to complete a task? or how fast the response is.
+Following testing should consider in Non-functional testing types:
+•	Availability Testing
+•	Baseline testing
+•	Compatibility testing
+•	Compliance testing
+•	Configuration Testing
+•	Documentation testing
+•	Endurance testing
+•	Ergonomics Testing
+•	Interoperability Testing
+•	Installation Testing
+•	Load testing
+•	Localization testing and Internationalization testing
+•	Maintainability Testing
+•	Operational Readiness Testing
+•	Performance testing
+•	Recovery testing
+•	Reliability Testing
+•	Resilience testing
+•	Security testing
+•	Scalability testing
+•	Stress testing
+•	Usability testing
+•	Volume testing
+
+Monkey and Gorilla Testing:
+
+	Both Monkey and Gorilla test technique are behavior based testing technique with aim the break the application under test. The difference between the two is subtle. Lets define both to under-stand the difference.
+
+Monkey Testing:
+	A test technique commonly used in Unit testing and system testing phase in which the tester acts as a money (not in the literal sense) by giving random input across each and every unit/component or module to check the stability and workability of the system. It is a error-based test technique that involves extensive testing of system’s functionality with random valid or invalid inputs.
+Gorilla Testing:
+	A test technique that involves testing a particular module/component or functionality extensively with various range of valid and invalid inputs.
+	There is no particular test strategy for these test techniques as they can be adapted as final stages in testing phase. Although many organizations name them as reliability or fault tolerance testing the idea and intent is the same as gorilla or monkey testing.
